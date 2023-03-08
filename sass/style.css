@@ -9,12 +9,12 @@ h2, h3, h4, .nav-items, #transition, footer {
 
 body {
   color: white;
-  background-color: #7a99ac;
+  background-color: rgba(52, 15, 15, 0.968);
 }
 
 /* *************** HEADER ************** */
 header {
-  background: url(../assets/fondMain.jpg) no-repeat 50% 50%;
+  background: url(../assets/fondMain.jpg) no-repeat;
   background-size: cover;
   height: 98vh;
   border-radius: 0 0 20px 20px;
@@ -26,13 +26,18 @@ header {
 h1 {
   padding-top: 25%;
   align-items: center;
-  font-size: 4em;
+  font-size: 3em;
   color: #ffffff;
   text-shadow: 3px 0px 0px #000;
   animation: titre ease 5s;
 }
 
 /* ************* MAIN ************* */
+section {
+  padding-top: 5%;
+  padding-bottom: 2.5%;
+}
+
 @keyframes titre {
   0% {
     opacity: 0;
@@ -44,33 +49,33 @@ h1 {
   }
 }
 .cube {
-  margin: 12rem auto 0;
-  width: 300px;
-  height: 300px;
-  transform-style: preserve-3d;
+  margin: 2rem auto 2rem;
+  width: 12rem;
+  height: 12rem;
   transform: rotateY(30deg) rotateZ(30deg) rotateX(0deg);
+  transform-style: preserve-3d;
   animation: spin 5s infinite linear;
 }
 
 .side {
   position: absolute;
   opacity: 0.95;
-  width: 300px;
-  height: 300px;
+  width: 12rem;
+  height: 12rem;
 }
 
 #front {
   background: url(../assets/pics1.png) no-repeat center/cover;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
-  transform: translateZ(150px);
+  transform: translateZ(6rem);
 }
 
 #top {
   background: url(../assets/pics2.png) no-repeat center/cover;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
-  transform: rotateX(-270deg) translateY(-300px/2);
+  transform: rotateX(-270deg) translateY(-6rem);
   transform-origin: top center;
 }
 
@@ -78,7 +83,7 @@ h1 {
   background: url(../assets/pics3.png) no-repeat center/cover;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
-  transform: rotateX(270deg) translateY(300px/2);
+  transform: rotateX(270deg) translateY(6rem);
   transform-origin: bottom center;
 }
 
@@ -86,7 +91,7 @@ h1 {
   background: url(../assets/pics4.png) no-repeat center/cover;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
-  transform: rotateY(-270deg) translateX(150px);
+  transform: rotateY(-270deg) translateX(6rem);
   transform-origin: top right;
 }
 
@@ -94,7 +99,7 @@ h1 {
   background: url(../assets/pics5.png) no-repeat center/cover;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
-  transform: rotateY(270deg) translateX(-300px/2);
+  transform: rotateY(270deg) translateX(-6rem);
   transform-origin: center left;
 }
 
@@ -102,7 +107,7 @@ h1 {
   background: url(../assets/pics6.png) no-repeat center/cover;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
-  transform: rotateY(-180deg) translateZ(150px);
+  transform: rotateY(-180deg) translateZ(6rem);
 }
 
 @keyframes spin {

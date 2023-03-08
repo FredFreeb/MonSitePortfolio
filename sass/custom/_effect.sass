@@ -6,15 +6,16 @@
         opacity: 1
         transform: translateY(0)
 
-$cube:300px
+$cube:12rem
 
 .cube
-    margin: 12rem auto 0
+    margin: 2rem auto 2rem
     width: $cube
     height: $cube
-    transform-style: preserve-3d
     transform: rotateY(30deg) rotateZ(30deg) rotateX(0deg)
+    transform-style: preserve-3d
     animation: spin 5s infinite linear
+
 .side
     position: absolute
     opacity: 0.95
@@ -30,13 +31,13 @@ $cube:300px
 #top
     background: url(../assets/pics2.png) no-repeat center/cover
     backdrop-filter: blur(5px)
-    transform: rotateX(-270deg) translateY(calc(-1 *$cube) / 2)
+    transform: rotateX(-270deg) translateY(calc(-1 *$cube / 2))
     transform-origin: top center
 
 #bottom
     background: url(../assets/pics3.png) no-repeat center/cover
     backdrop-filter: blur(5px)
-    transform: rotateX(270deg) translateY(calc($cube) / 2)
+    transform: rotateX(270deg) translateY(calc($cube / 2))
     transform-origin: bottom center
 
 #right
@@ -48,7 +49,7 @@ $cube:300px
 #left
     background: url(../assets/pics5.png) no-repeat center/cover
     backdrop-filter: blur(5px)
-    transform: rotateY(270deg) translateX(calc(-1 *$cube) / 2)
+    transform: rotateY(270deg) translateX(calc(-1 *$cube / 2))
     transform-origin: center left
     
 #back
@@ -59,7 +60,6 @@ $cube:300px
 @keyframes spin 
     from
         transform: rotateX(0) rotateY(0) rotateZ(0)
-    
     to 
         transform: rotateX(360) rotateY(360) rotateZ(360)
     
