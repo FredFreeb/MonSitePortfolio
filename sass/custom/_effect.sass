@@ -1,3 +1,4 @@
+/* ****** TITRE ****** */
 @keyframes titre
     0%
         opacity: 0
@@ -5,16 +6,17 @@
     100%
         opacity: 1
         transform: translateY(0)
-
-$cube:12rem
+        
+/* *********** CUBE ******** */
+$cube:13.5em
 
 .cube
     margin: 2rem auto 2rem
     width: $cube
     height: $cube
     transform: rotateY(30deg) rotateZ(30deg) rotateX(0deg)
+    animation: spin 4s infinite linear
     transform-style: preserve-3d
-    animation: spin 5s infinite linear
 
 .side
     position: absolute
@@ -59,3 +61,14 @@ $cube:12rem
         transform: rotateX(360) rotateY(360) rotateZ(360)
     
 
+.wave
+    width: 12rem
+    height: 12rem
+    display: flex
+    transition: transform 0.3s ease-out
+
+
+.wave:hover 
+    z-index: 3
+    transform: scale(1.2)
+    font-weight: bold

@@ -6,36 +6,43 @@ $bg-color-primary:rgba(31, 31, 31, 0.968)
 $bg-color-opposite: #fff
 $font-height:2em
 $border-image:1px 1px 2px black, 0 0 25px #4dc024, 0 0 5px #133a05
-
+$border-title:1px 1px 2px black, 0 0 25px #1366f7, 0 0 5px #3365bb
 /* *************** GENERAL ************ */    
 html
     scroll-behavior: smooth
 body
+    margin-left: 2.5%
+    margin-right: 2.5%
     color: white
     background-color: $bg-color-primary
 p
+    font-size:$font-height*0.65
     font-family: 'Tilt Neon', cursive
     text-shadow: 1px 0px 0px $primary-color
 a
-    text-shadow: 12px solid $bg-color-opposite
+    color: #fff
+    text-shadow: $border-image
+
+
 /* *************** HEADER ************** */
 
 header
     background: url(../assets/fondMain.jpg) no-repeat 
     background-size: cover
-    height: 98vh
+    height: 90vh
     border-radius: 0 0 20% 20%
     box-shadow: $border-image
     img
         box-shadow: $border-image
 
 h1
-    padding-top: 22%
+    padding-top: 17%
     align-items: center
-    font-size: $font-height*1.3
+    font-size: $font-height*1.60
     color: $bg-color-opposite
-    text-shadow: 5px 2px 0px $hr-color
+    text-shadow: $border-title
     animation: titre ease 5s
+
 nav
     box-shadow:$border-image
 
@@ -45,19 +52,31 @@ section
     padding-top:5% 
     padding-bottom: 2.5%
     .portfolio
-        background-color:$hr-color
-        margin-top: 1.5%
-        border-radius: 5%
-        box-shadow: $border-image
-    h2
-        font-size: 2em
-        text-shadow: 5px 2px 0px #3365bb
-h3
+        padding-bottom: 15%
+        h5
+        color: black
+h2
     font-size: $font-height*2
+    text-shadow:$border-title
+
+h3
+    font-size: $font-height*1.2
     padding-top: 2%
     padding-bottom: 2%
+    text-shadow: $border-title
+
+.container
+    padding-bottom: 2%
+
+.portfolio
+    background-color:$hr-color
+    margin-top: 1.5%
+    border-radius: 5%
+    box-shadow: $border-image
 /* ************* FOOTER *********** */
+
 footer
+    margin-bottom: 2%
     img
         height: 120px
         width: 120px
