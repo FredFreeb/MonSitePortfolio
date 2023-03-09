@@ -13,19 +13,19 @@
 <!-- ACCUEIL -->
     <header>
         <nav class="navbar navbar-dark bg-dark">
-            <div class="container-fluid">
+            <div class="container">
             <a class="navbar-brand" id="logo" href="#"><img class="rounded-circle"src="../assets/logo cv.png" alt="Logo" width="35%"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
         
-            <div class="collapse navbar-collapse" id="menu">
+            <div class="navbar-collapse" id="menu">
                 <ul class="navbar-nav mr-auto mb-2">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#propos">À Propos</a>
+                        <a class="nav-link active" aria-current="page" href="#propos"><i class="fa-regular fa-user"></i>  À Propos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#contact">Contact</a>
+                        <a class="nav-link active" href="#contact"><i class="fa-regular fa-envelope"></i>  Contact</a>
                     </li>
                 </ul>
             </div>   
@@ -52,34 +52,123 @@
             <div class="side" id="left"></div>
             <div class="side" id="back"></div>
         </div>
-    </section>  
-<!-- PARTIE CONTACT --> 
-            <section id="propos">
-   
+        <div class="portfolio">
+            <section class="content-section" id="portfolio">
+                <div class="container px-4 px-lg-5">
+                    <div class="content-section-heading text-center">
+                        <h3 class="text-center">Portfolio</h3>
+                    </div>
+                    <div class="row gx-0">
+                        <div class="col-lg-6">
+                            <a class="portfolio-item" href="#!">
+                                <div class="caption">
+                                    <div class="caption-content">
+                                        <div class="h2">Site AFPA </div>
+                                        <p class="mb-0">Exercice HTML/css <br>A venir</p>
+                                    </div>
+                                </div>
+                                <img class="img-fluid" src="../assets/enCours.png" alt="...">
+                            </a>
+                        </div>
+                        <div class="col-lg-6">
+                            <a class="portfolio-item" href="#!">
+                                <div class="caption">
+                                    <div class="caption-content">
+                                        <div class="h2">Site AFPA 2</div>
+                                        <p class="mb-0">Exercice HTML/css/Bootstrap <br>A venir</p>
+                                    </div>
+                                </div>
+                                <img class="img-fluid" src="../assets/enCours.png" alt="...">
+                            </a>
+                        </div>
+                        <div class="col-lg-6">
+                            <a class="portfolio-item" href="#!">
+                                <div class="caption">
+                                    <div class="caption-content">
+                                        <div class="h2">Site C.V.</div>
+                                        <p class="mb-0">Mon tout premier site Web</p>
+                                    </div>
+                                </div>
+                                <img class="img-fluid" src="../assets/enCours.png" alt="...">
+                            </a>
+                        </div>
+                        <div class="col-lg-6">
+                            <a class="portfolio-item" href="#!">
+                                <div class="caption">
+                                    <div class="caption-content">
+                                        <div class="h2">Sound Of Memories</div>
+                                        <p class="mb-0">Mon site pour l'ecf</p>
+                                    </div>
+                                </div>
+                                <img class="img-fluid" src="../assets/enCours.png" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </section>
+        </div>
+    </section>  
+
+</div>
+</article>
+
+<!-- PARTIE CONTACT --> 
+<footer class="text-center">
+            <h2 class="text-center">Me Contacter</h2>
             <section id="contact">
+                <div class="d-flex justify-content-around fa-2x">
+                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-discord"></i></a>
+                <a href=""><i class="fa-brands fa-slack"></i></a>
+                <a href=""><i class="fa-brands fa-windows">Teams</i></a>
+                </div>
 
             </section>
-            <form>
-                <h2 class="text-center">Me Contacter</h2>
-                <div class="mb-4">
-                    <label for="exampleFormControlInput1" class="form-label">Adresse e-mail</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            <div class="container register">
+                <div class="row">
+                    <div class="col-md-3 register-left">
+                        <h3>I wait you</h3>
+                        <p>Je vous réponds au plus vite!<br>Et ce n'est pas une blague...</p>
+                        <img src="../assets/cameo.png" alt="Je suis un quoka, pas light...">
+                    </div>
+
+                    <div class="col-md-9 register-right">
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <h3 class="register-heading">Un formulaire c'est plus sympa!</h3>
+                                <div class="row register-form">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="First Name *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Last Name *" value="" />
+                                        </div>
+                                        </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="Your Email *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control" placeholder="Your Phone *" value="" />
+                                        </div>
+                                        <div>
+                                        <div>
+                                        <input type="submit" class="btn btn-primary"  value="C'est Parti!"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
                 </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-                <div class="mb-3">
-                    <button type="submit" class="btn btn-primary">Envoyer</button>
-                </div>
-            </form>
-        </article>
-        </main>
-        <footer class="fixed-bottom text-center">
+
+
+
             <a href="">mentions légales</a>
         </footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/2cf8922f6a.js" crossorigin="anonymous"></script>
 </html>
+

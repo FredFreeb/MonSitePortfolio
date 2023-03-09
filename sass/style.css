@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Tilt+Neon&display=swap"); /* *************** GENERAL ************ */    
+@import url("https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Tilt+Neon&display=swap");
+/* *************** VARIABLES ********** */
+/* *************** GENERAL ************ */    
 html {
   scroll-behavior: smooth;
 }
@@ -10,6 +12,11 @@ body {
 
 p {
   font-family: "Tilt Neon", cursive;
+  text-shadow: 1px 0px 0px #3365bb;
+}
+
+a {
+  text-shadow: 12px solid #fff;
 }
 
 /* *************** HEADER ************** */
@@ -17,33 +24,54 @@ header {
   background: url(../assets/fondMain.jpg) no-repeat;
   background-size: cover;
   height: 98vh;
-  border-radius: 0 0 30% 30%;
+  border-radius: 0 0 20% 20%;
+  box-shadow: 1px 1px 2px black, 0 0 25px #4dc024, 0 0 5px #133a05;
+}
+header img {
+  box-shadow: 1px 1px 2px black, 0 0 25px #4dc024, 0 0 5px #133a05;
 }
 
 h1 {
-  padding-top: 25%;
+  padding-top: 22%;
   align-items: center;
-  font-size: 3em;
-  color: #ffffff;
+  font-size: 2.6em;
+  color: #fff;
   text-shadow: 5px 2px 0px #133a05;
   animation: titre ease 5s;
 }
 
 nav {
-  box-shadow: 5px 5px 5px 5px #27700d;
+  box-shadow: 1px 1px 2px black, 0 0 25px #4dc024, 0 0 5px #133a05;
 }
 
 /* ************* MAIN ************* */
 section {
   padding-top: 5%;
   padding-bottom: 2.5%;
-  box-shadow: 5px 5px 5px 5px #27700d;
 }
-
-h2 {
-  font-family: "Climate Crisis", cursive;
+section .portfolio {
+  background-color: #133a05;
+  margin-top: 1.5%;
+  border-radius: 5%;
+  box-shadow: 1px 1px 2px black, 0 0 25px #4dc024, 0 0 5px #133a05;
+}
+section h2 {
   font-size: 2em;
   text-shadow: 5px 2px 0px #3365bb;
+}
+
+h3 {
+  font-size: 4em;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+/* ************* FOOTER *********** */
+footer img {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px 5px #27700d;
 }
 
 @keyframes titre {
