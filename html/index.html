@@ -17,7 +17,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarsExample01" aria-expanded="true" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-            <div class="navbar-expand" id="menu">
+            <div class="navbar-expand collapse" id="menu">
                 <ul class="navbar-nav me-auto mb-1">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#propos"><i class="fa-regular fa-user"></i>  À Propos</a>
@@ -54,16 +54,16 @@
                 <div class="side" id="left"></div>
                 <div class="side" id="back"></div>
             </div>
-
+            <hr>
             <!--PORTFOLIO-->
             <h2 class="text-center">Mon portfolio</h2>
             <section class="portfolio">
                 
-                <div class="container-fluid">
+                <div class="container">
                 <div class="d-flex justify-content-around">
                 
-                    <div class="card text-center wave">
-                        <img src="../assets/enCours.png" class="card-img-top" alt="Mon premier site">
+                    <div class="d-block text-center wave">
+                        <img src="../assets/enCours.png" class="d-block w-100" alt="Mon premier site">
                         <div class="card-body">
                             <h5 class="card-title">Site Web AFPA</h5>
                             <p class="card-text">1er Exercice</p>
@@ -71,8 +71,8 @@
                         </div>
                     </div>
         
-                    <div class="card text-center wave">
-                        <img src="../assets/enCours.png" class="card-img-top" alt="Mon projet personnel">
+                    <div class="d-block text-center wave">
+                        <img src="../assets/enCours.png" class="d-block w-100" alt="Mon projet personnel">
                         <div class="card-body">
                             <h5 class="card-title">Cours2conduite.com</h5>
                             <p class="card-text">En cours de travail</p>
@@ -80,8 +80,8 @@
                         </div>
                     </div>
 
-                    <div class="card text-center wave">
-                        <img src="../assets/enCours.png" class="card-img-top" alt="Mon Evaluation en cours de formation">
+                    <div class="d-block text-center wave">
+                        <img src="../assets/enCours.png" class="d-block w-100" alt="Mon Evaluation en cours de formation">
                         <div class="card-body">
                             <h5 class="card-title">Sound of memories</h5>
                             <p class="card-text">En cours de travail</p>
@@ -95,14 +95,14 @@
 <!-- PARTIE CONTACT --> 
 <footer class="text-center">
             <h2 class="text-center">Me Contacter</h2>
-                <div class="d-flex justify-content-around fa-2x">
+                <div class="d-flex justify-content-around fa-3x">
                 <a href=""><i class="fa-brands fa-github"></i></a>
                 <a href=""><i class="fa-brands fa-linkedin"></i></a>
                 <a href=""><i class="fa-brands fa-discord"></i></a>
                 <a href=""><i class="fa-brands fa-slack"></i></a>
                 <a href=""><i class="fa-brands fa-windows">Teams</i></a>
                 </div>
-
+                <hr>
             <div class="container register">
                 <div class="row">
                     <div class="col-md-3 register-left">
@@ -111,7 +111,7 @@
                         <img src="../assets/cameo.png" alt="Je suis un quoka, pas light...">
                     </div>
 
-                    <div class="col-md-9 register-right">
+                    <div class="col-md-9 register-right" id="contact">
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                 <h4 class="register-heading">Un formulaire c'est plus sympa!</h4>
@@ -141,7 +141,7 @@
                         </div>
                 </div>
 
-            <a href="">mentions légales</a>
+            <a class="" href="https://www.legalplace.fr/guides/mentions-legales/">mentions légales</a>
         </footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>

@@ -11,6 +11,7 @@
 $cube:15em
 
 .cube
+    z-index: 3
     margin: 2em auto 2em
     width: $cube
     height: $cube
@@ -29,36 +30,36 @@ $cube:15em
 #front
     background: url(../assets/pics1.png) no-repeat center/cover
     transform: translateZ(calc($cube / 2))
-    backdrop-filter: blur(5px)
+    backdrop-filter: blur(1px)
 
 #top
     background: url(../assets/pics2.png) no-repeat center/cover
     transform: rotateX(-270deg) translateY(calc(-1 *$cube / 2))
     transform-origin: top center
-    backdrop-filter: blur(5px)
+    backdrop-filter: blur(1px)
 
 #bottom
     background: url(../assets/pics3.png) no-repeat center/cover
     transform: rotateX(270deg) translateY(calc($cube / 2))
     transform-origin: bottom center
-    backdrop-filter: blur(5px)
+    backdrop-filter: blur(1px)
 
 #right
     background: url(../assets/pics4.png) no-repeat center/cover
     transform: rotateY(-270deg) translateX(calc($cube / 2))
     transform-origin: top right
-    backdrop-filter: blur(5px)
+    backdrop-filter: blur(1px)
 
 #left
     background: url(../assets/pics5.png) no-repeat center/cover
     transform: rotateY(270deg) translateX(calc(-1 *$cube / 2))
     transform-origin: center left
-    backdrop-filter: blur(5px)
+    backdrop-filter: blur(1px)
 
 #back
     background: url(../assets/pics6.png) no-repeat center/cover
     transform: rotateY(-180deg) translateZ(calc($cube / 2))
-    backdrop-filter: blur(5px)
+    backdrop-filter: blur(1px)
 
 @keyframes spin 
     from
@@ -68,16 +69,12 @@ $cube:15em
 
 
 .wave
-    width: 12rem
-    height: 12rem
-    display: flex
     transition: transform 0.3s ease-out
     &:hover 
         z-index: 3
-        transform: scale(2)
+        transform: scale(1.3)
         transition-duration: 0.8s
-        positon: absolute
         justify-content: center
         font-weight: bold
-        backdrop-filter: blur(50px)
+        backdrop-filter: blur(5px)
         backdrop-filter: brightness(50%)
