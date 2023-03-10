@@ -5,8 +5,8 @@ $hr-color:#133a05
 $bg-color-primary:rgba(31, 31, 31, 0.968)
 $bg-color-opposite: #fff
 $font-height:2em
-$border-image:1px 1px 2px black, 0 0 25px #4dc024, 0 0 5px #133a05
-$border-title:1px 1px 2px black, 0 0 25px #1366f7, 0 0 5px #3365bb
+$border-image:1px 1px 2px black, 0 0 25px #4dc024, 0 0 5px #133a05, 0 0 25px #4dc024, 0 0 5px #133a05
+$border-title:1px 1px 2px black, 0 0 25px #1366f7, 0 0 5px #3365bb, 0 0 25px #1366f7, 0 0 5px #3365bb
 /* *************** GENERAL ************ */    
 html
     scroll-behavior: smooth
@@ -16,7 +16,7 @@ body
     color: white
     background-color: $bg-color-primary
 p
-    font-size:$font-height*0.65
+    font-size:$font-height*0.5
     font-family: 'Tilt Neon', cursive
     text-shadow: 1px 0px 0px $primary-color
 a
@@ -24,9 +24,8 @@ a
     text-shadow: $border-image
 
 hr
-    z-index: 1
     padding: 1%
-    text-shadow: $border-title
+    color: $border-title
 
 /* *************** HEADER ************** */
 
@@ -65,7 +64,7 @@ section
             color: black
 
 h2
-    font-size: $font-height*2
+    font-size: $font-height*1.4
     text-shadow:$border-title
     margin-bottom: 5%
 
@@ -80,7 +79,7 @@ h3
 /* ************* FOOTER *********** */
 
 footer
-    margin-bottom: 2%
+    margin-bottom: 15%
     img
         height: 120px
         width: 120px
