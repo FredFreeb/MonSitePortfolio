@@ -50,13 +50,20 @@ nav {
 
 /* ************* MAIN ************* */
 section {
+  margin-bottom: 5%;
   padding-top: 5%;
   padding-bottom: 2.5%;
 }
 section .portfolio {
-  padding-bottom: 15%;
+  background-color: #133a05;
+  margin-top: 1.5%;
+  border-radius: 5%;
+  box-shadow: 1px 1px 2px black, 0 0 25px #4dc024, 0 0 5px #133a05;
+}
+section .portfolio h5 {
   color: black;
 }
+
 h2 {
   font-size: 4em;
   text-shadow: 1px 1px 2px black, 0 0 25px #1366f7, 0 0 5px #3365bb;
@@ -67,17 +74,6 @@ h3 {
   padding-top: 2%;
   padding-bottom: 2%;
   text-shadow: 1px 1px 2px black, 0 0 25px #1366f7, 0 0 5px #3365bb;
-}
-
-.container {
-  padding-bottom: 2%;
-}
-
-.portfolio {
-  background-color: #133a05;
-  margin-top: 1.5%;
-  border-radius: 5%;
-  box-shadow: 1px 1px 2px black, 0 0 25px #4dc024, 0 0 5px #133a05;
 }
 
 /* ************* FOOTER *********** */
@@ -104,54 +100,66 @@ footer img {
 }
 /* *********** CUBE ******** */
 .cube {
-  margin: 2rem auto 2rem;
-  width: 13.5em;
-  height: 13.5em;
-  transform: rotateY(30deg) rotateZ(30deg) rotateX(0deg);
-  animation: spin 4s infinite linear;
+  margin: 2em auto 2em;
+  width: 15em;
+  height: 15em;
+  transform: rotateY(30deg) rotateX(30deg) rotateZ(30deg);
+  animation: spin 20s infinite linear;
   transform-style: preserve-3d;
 }
 
 .side {
   position: absolute;
   opacity: 0.95;
-  width: 13.5em;
-  height: 13.5em;
+  width: 15em;
+  height: 15em;
   border: 2px rgba(255, 4, 4, 0.5) solid;
 }
 
 #front {
   background: url(../assets/pics1.png) no-repeat center/cover;
-  transform: translateZ(6.75em);
+  transform: translateZ(7.5em);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 
 #top {
   background: url(../assets/pics2.png) no-repeat center/cover;
-  transform: rotateX(-270deg) translateY(-6.75em);
+  transform: rotateX(-270deg) translateY(-7.5em);
   transform-origin: top center;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 
 #bottom {
   background: url(../assets/pics3.png) no-repeat center/cover;
-  transform: rotateX(270deg) translateY(6.75em);
+  transform: rotateX(270deg) translateY(7.5em);
   transform-origin: bottom center;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 
 #right {
   background: url(../assets/pics4.png) no-repeat center/cover;
-  transform: rotateY(-270deg) translateX(6.75em);
+  transform: rotateY(-270deg) translateX(7.5em);
   transform-origin: top right;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 
 #left {
   background: url(../assets/pics5.png) no-repeat center/cover;
-  transform: rotateY(270deg) translateX(-6.75em);
+  transform: rotateY(270deg) translateX(-7.5em);
   transform-origin: center left;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 
 #back {
   background: url(../assets/pics6.png) no-repeat center/cover;
-  transform: rotateY(-180deg) translateZ(6.75em);
+  transform: rotateY(-180deg) translateZ(7.5em);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 
 @keyframes spin {
@@ -159,7 +167,7 @@ footer img {
     transform: rotateX(0) rotateY(0) rotateZ(0);
   }
   to {
-    transform: rotateX(360) rotateY(360) rotateZ(360);
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
   }
 }
 .wave {
@@ -168,9 +176,12 @@ footer img {
   display: flex;
   transition: transform 0.3s ease-out;
 }
-
 .wave:hover {
   z-index: 3;
-  transform: scale(1.2);
+  transform: scale(2);
   font-weight: bold;
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: brightness(50%);
+          backdrop-filter: brightness(50%);
 }/*# sourceMappingURL=style.css.map */
