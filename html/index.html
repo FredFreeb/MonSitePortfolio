@@ -14,7 +14,7 @@
     <header>
         <nav class="navbar navbar-dark bg-black">
             <div class="container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarsExample01" aria-expanded="true" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"  aria-expanded="true" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             <div class="navbar-expand collapse" id="menu">
@@ -27,7 +27,7 @@
                     </li>
                 </ul>
             </div>
-            <a class="navbar-brand" id="logo" href="#"><img class="rounded-circle" src="../assets/logoCv.png" alt="Logo" width="55px"></a>
+            <a class="navbar-brand" id="logo" href="#"><img class="rounded-circle" src="../assets/logoCv.png" alt="Logo"></a>
         </div>
         </nav>
         <h1 class="text-center">Frédéric FRIBEL<br>Développeur full-stack</h1> 
@@ -37,7 +37,6 @@
         <article>
             <section id="propos">
             <h2 class="text-center">À Propos</h2>
-
             <div class="container">
                 <p class="text-center">Autodidacte depuis peu, j'ai décidé de démissionner, afin de me lancer dans une reconversion à temps complet en tant que développeur web.
                     Dans le cadre d'une formation auprès de l'A.F.P.A., je recherche une entreprise qui pourra m'accueillir lors d'un stage en immersion.
@@ -45,6 +44,7 @@
                 <p class="text-center "> Vous trouverez mon <a download href="../assets/cv_provisoire_stage_2023-2.pdf">C.V.</a> en cliquant dessus.</p>
                 <p class="text-center ">Voici mes languages & frameworks utilisés:</p>
             </div> 
+            </section>
 
             <div class="cube">
                 <div class="side" id="front"></div>
@@ -54,53 +54,49 @@
                 <div class="side" id="left"></div>
                 <div class="side" id="back"></div>
             </div>
-            <hr>
+
             <!--PORTFOLIO-->
             <h2 class="text-center">Mon portfolio</h2>
-            <section class="portfolio">
-                
-                <div class="container">
-                <div class="d-flex justify-content-around">
-                
-                    <div class="d-block text-center wave">
-                        <img src="../assets/afpa.jpeg" class="d-block w-100" alt="Mon premier site">
+            <section class=" ">
+
+                    <div class="justify-content-center wave portfolio">
+                        <img src="../assets/afpa.jpeg"  alt="Mon projet personnel">
                         <div class="card-body">
-                            <h5 class="card-title">Site Web AFPA</h5>
-                            <p class="card-text">1er Exercice</p>
-                            <a href="fredfreeb.github.io/SiteAfpaExoFribel/" class="btn btn-primary">Jetez y un oeil</a>
+                            <h5 class="card-title">Site Web Afpa</h5>
+                            <p class="card-text">Exercice 1 <br>En cours de travail</p>
+                            <a href="#" class="btn btn-danger">En attente</a>
                         </div>
                     </div>
         
-                    <div class="d-block text-center wave">
-                        <img src="../assets/enCours.png" class="d-block w-100" alt="Mon projet personnel">
+                    <div class="col-md-4 wave portfolio">
+                        <img src="../assets/enCours.png" class="col-3" alt="Mon projet personnel">
                         <div class="card-body">
                             <h5 class="card-title">Cours2conduite.com</h5>
-                            <p class="card-text">En cours de travail</p>
+                            <p class="card-text">Projet Personnel<br>En cours de travail</p>
                             <a href="#" class="btn btn-danger">En attente</a>
                         </div>
                     </div>
 
-                    <div class="d-block text-center wave">
-                        <img src="../assets/SofM-cover.png" class="d-block w-100" alt="Mon Evaluation en cours de formation">
+                    <div class=" col-md-4 wave portfolio">
+                        <img src="../assets/SofM-cover.png" class="justify-content-center" alt="Mon Evaluation en cours de formation">
                         <div class="card-body">
                             <h5 class="card-title">Sound of memories</h5>
-                            <p class="card-text">En cours de travail</p>
+                            <p class="card-text">E.C.F. 1<br>En cours de travail</p>
                             <a href="#" class="btn btn-danger">En attente</a>
                         </div>
-                    </div>
-
+                    </div>    
             </section>
         </article>
-
+    </main>
 <!-- PARTIE CONTACT --> 
-<footer class="text-center">
+        <footer class="text-center">
             <h2 class="text-center">Me Contacter</h2>
-                <div class="d-flex justify-content-around fa-3x">
+                <div class="d-flex justify-content-around fa-4x">
                 <a href=""><i class="fa-brands fa-github"></i></a>
                 <a href=""><i class="fa-brands fa-linkedin"></i></a>
                 <a href=""><i class="fa-brands fa-discord"></i></a>
                 <a href=""><i class="fa-brands fa-slack"></i></a>
-                <a href=""><i class="fa-brands fa-windows">Teams</i></a>
+                <a href=""><i class="fa-brands fa-windows"></i></a>
                 </div>
                 <hr>
             <div class="container register">
@@ -113,38 +109,38 @@
 
                     <div class="col-md-9 register-right" id="contact">
                         <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel">
                                 <h4 class="register-heading">Un formulaire c'est plus sympa!</h4>
                                 <div class="row register-form">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                           <input type="text" class="form-control my-3" placeholder="First Name *" value="" />
+                                           <input type="text" class="form-control my-3" placeholder="First Name *" value="">
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control my-3" placeholder="Last Name *" value="" />
+                                            <input type="text" class="form-control my-3" placeholder="Last Name *" value="">
                                         </div>
                                         </div>
                                     <div class="col-md-6">
                                         <div class="form-group my-3">
-                                            <input type="email" class="form-control" placeholder="Your Email *" value="" />
+                                            <input type="email" class="form-control" placeholder="Your Email *" value="" >
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control my-3" placeholder="Your Phone *" value="" />
+                                            <input type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control my-3" placeholder="Your Phone *" value="">
                                         </div>
                                     </div>
                                         <div class="align-content-center">
-                                        <input type="submit" class="btn btn-primary"  value="C'est Parti!"/>
+                                        <input type="submit" class="btn btn-primary"  value="C'est Parti!">
                                         </div>
                                     </div>
                                 </div>
                             </div>   
                         </div>
                 </div>
-
+            </div>
             <a class="" href="https://www.legalplace.fr/guides/mentions-legales/">mentions légales</a>
         </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2cf8922f6a.js" crossorigin="anonymous"></script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-<script src="https://kit.fontawesome.com/2cf8922f6a.js" crossorigin="anonymous"></script>
 </html>
 

@@ -16,7 +16,7 @@ body
     color: white
     background-color: $bg-color-primary
 p
-    font-size:$font-height*0.5
+    font-size:$font-height*0.8
     font-family: 'Tilt Neon', cursive
     text-shadow: 1px 0px 0px $primary-color
 a
@@ -25,7 +25,7 @@ a
 
 hr
     padding: 1%
-    color: $border-title
+    color: $primary-color
 
 /* *************** HEADER ************** */
 
@@ -49,7 +49,8 @@ h1
 nav
     box-shadow:$border-image
 
-
+.rounded-circle
+    width: 70px
 /* ************* MAIN ************* */
 section
     margin-bottom: 5%
@@ -74,7 +75,16 @@ h3
     padding-bottom: 2%
     text-shadow: $border-title
 
-
+.card
+    backdrop-filter: blur(10px)
+    border-radius: 15px
+    border-top: 1 px solid $border-title
+    .content
+        justify-content: center
+        align-items: center
+        .picture
+            margin: 0 auto
+            .img
 
 /* ************* FOOTER *********** */
 
