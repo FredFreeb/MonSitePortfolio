@@ -69,6 +69,9 @@ section .portfolio {
   border-radius: 5%;
   box-shadow: 1px 1px 2px black, 0 0 25px #4dc024, 0 0 5px #133a05, 0 0 25px #4dc024, 0 0 5px #133a05;
 }
+section .portfolio img {
+  width: 18rem;
+}
 section .portfolio h5 {
   color: black;
 }
@@ -86,19 +89,13 @@ h3 {
   text-shadow: 1px 1px 2px black, 0 0 25px #1366f7, 0 0 5px #3365bb, 0 0 25px #1366f7, 0 0 5px #3365bb;
 }
 
-.card {
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  border-radius: 15px;
-  border-top: 1 px solid 1px 1px 2px black, 0 0 25px #1366f7, 0 0 5px #3365bb, 0 0 25px #1366f7, 0 0 5px #3365bb;
+h5 {
+  font-size: 2em;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  text-shadow: 1px 1px 2px black, 0 0 25px #4dc024, 0 0 5px #133a05, 0 0 25px #4dc024, 0 0 5px #133a05;
 }
-.card .content {
-  justify-content: center;
-  align-items: center;
-}
-.card .content .picture {
-  margin: 0 auto;
-}
+
 /* ************* FOOTER *********** */
 footer {
   margin-bottom: 15%;
@@ -194,16 +191,4 @@ footer img {
     transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
   }
 }
-.wave {
-  transition: transform 0.3s ease-out;
-}
-.wave:hover {
-  z-index: 3;
-  transform: scale(1.1);
-  transition-duration: 0.2s;
-  font-weight: bold;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: brightness(50%);
-          backdrop-filter: brightness(50%);
-}/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */

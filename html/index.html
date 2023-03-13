@@ -7,6 +7,7 @@
         <title>Your future employee</title>
         <link rel="stylesheet" href="../scss/bootstrap.css">
         <link rel="stylesheet" href="../sass/style.css">
+        <link rel="stylesheet" href="../sass/portfolio.css">
         
     </head>
 <body>
@@ -56,36 +57,60 @@
             </div>
 
             <!--PORTFOLIO-->
-            <h2 class="text-center">Mon portfolio</h2>
-            <section class=" ">
+            <div id="cards_landscape_wrap-2">
+                <h2 class="text-center portfolio">Mon portfolio</h2>
+                <div class="container">
+                    <div class="row justify-content-around">
+                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
 
-                    <div class="justify-content-center wave portfolio">
-                        <img src="../assets/afpa.jpeg"  alt="Mon projet personnel">
-                        <div class="card-body">
-                            <h5 class="card-title">Site Web Afpa</h5>
-                            <p class="card-text">Exercice 1 <br>En cours de travail</p>
-                            <a href="#" class="btn btn-danger">En attente</a>
+                                <div class="card-flyer">
+                                    <div class="text-box">
+                                        <div class="image-box">
+                                            <img src="../assets/afpa.jpeg" alt="Exercice Afpa Html/css" >
+                                        </div>
+                                        <div class="text-container">
+                                            <h6>Site Afpa</h6>
+                                            <p>Mon premier exercice respectant un cahier des charges</p>
+                                            <a href="#" class="btn btn-primary">Rendre Visite</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                                <div class="card-flyer">
+                                    <div class="text-box">
+                                        <div class="image-box">
+                                            <img src="../assets/enCours.png" alt="En travaux" >
+                                        </div>
+                                        <div class="text-container">                                    
+                                            <h6>Cours2Conduite.com</h6>
+                                            <p>Projet Personnel à présenter au jury du titre professionnel</p>
+                                            <a href="#" class="btn btn-danger">En attente</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+
+                                <div class="card-flyer">
+                                    <div class="text-box">
+                                        <div class="image-box">
+                                            <img src="../assets/SofM-cover.png" alt="Mon E.C.F. 1" >
+                                        </div>
+                                        <div class="text-container">
+                                            <h6>Sound Of Memories</h6>
+                                            <p>Ma 1ère évaluation en cours de formation</p>
+                                            <a href="#" class="btn btn-danger">En attente</a>
+                                        </div>
+                                    </div>
+                                </div>
+
                         </div>
                     </div>
-        
-                    <div class="col-md-4 wave portfolio">
-                        <img src="../assets/enCours.png" class="col-3" alt="Mon projet personnel">
-                        <div class="card-body">
-                            <h5 class="card-title">Cours2conduite.com</h5>
-                            <p class="card-text">Projet Personnel<br>En cours de travail</p>
-                            <a href="#" class="btn btn-danger">En attente</a>
-                        </div>
-                    </div>
-
-                    <div class=" col-md-4 wave portfolio">
-                        <img src="../assets/SofM-cover.png" class="justify-content-center" alt="Mon Evaluation en cours de formation">
-                        <div class="card-body">
-                            <h5 class="card-title">Sound of memories</h5>
-                            <p class="card-text">E.C.F. 1<br>En cours de travail</p>
-                            <a href="#" class="btn btn-danger">En attente</a>
-                        </div>
-                    </div>    
-            </section>
+                </div>
+            </div>
         </article>
     </main>
 <!-- PARTIE CONTACT --> 
@@ -143,4 +168,3 @@
     <script src="https://kit.fontawesome.com/2cf8922f6a.js" crossorigin="anonymous"></script>
 </body>
 </html>
-
