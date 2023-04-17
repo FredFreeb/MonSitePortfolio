@@ -30,7 +30,7 @@ hr {
 
 /* *************** HEADER ************** */
 header {
-  background: url(../assets/fondMain.jpg) no-repeat;
+  background: url(/assets/fondMain.jpg) no-repeat;
   background-size: cover;
   height: 90vh;
   border-radius: 0 0 20% 20%;
@@ -138,14 +138,14 @@ footer img {
 }
 
 #front {
-  background: url(../assets/pics1.png) no-repeat center/cover;
+  background: url(/assets/pics1.png) no-repeat center/cover;
   transform: translateZ(7.5em);
   -webkit-backdrop-filter: blur(1px);
           backdrop-filter: blur(1px);
 }
 
 #top {
-  background: url(../assets/pics2.png) no-repeat center/cover;
+  background: url(/assets/pics2.png) no-repeat center/cover;
   transform: rotateX(-270deg) translateY(-7.5em);
   transform-origin: top center;
   -webkit-backdrop-filter: blur(1px);
@@ -153,7 +153,7 @@ footer img {
 }
 
 #bottom {
-  background: url(../assets/pics3.png) no-repeat center/cover;
+  background: url(/assets/pics3.png) no-repeat center/cover;
   transform: rotateX(270deg) translateY(7.5em);
   transform-origin: bottom center;
   -webkit-backdrop-filter: blur(1px);
@@ -161,7 +161,7 @@ footer img {
 }
 
 #right {
-  background: url(../assets/pics4.png) no-repeat center/cover;
+  background: url(/assets/pics4.png) no-repeat center/cover;
   transform: rotateY(-270deg) translateX(7.5em);
   transform-origin: top right;
   -webkit-backdrop-filter: blur(1px);
@@ -169,7 +169,7 @@ footer img {
 }
 
 #left {
-  background: url(../assets/pics5.png) no-repeat center/cover;
+  background: url(/assets/pics5.png) no-repeat center/cover;
   transform: rotateY(270deg) translateX(-7.5em);
   transform-origin: center left;
   -webkit-backdrop-filter: blur(1px);
@@ -177,7 +177,7 @@ footer img {
 }
 
 #back {
-  background: url(../assets/pics6.png) no-repeat center/cover;
+  background: url(/assets/pics6.png) no-repeat center/cover;
   transform: rotateY(-180deg) translateZ(7.5em);
   -webkit-backdrop-filter: blur(1px);
           backdrop-filter: blur(1px);
